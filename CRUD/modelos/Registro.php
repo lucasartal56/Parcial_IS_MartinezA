@@ -18,8 +18,8 @@ class Registro extends Conexion{
         $this->persona_nombre = $args['persona_nombre'] ?? '';
         $this->persona_apellido = $args['persona_apellido'] ?? '';
         $this->persona_procedencia = $args['persona_procedencia'] ?? '';
-        $this->persona_entrada = $args['persona_entrada'] ?? date();
-        $this->persona_salida = $args['persona_salida'] ?? date();
+        $this->persona_entrada = $args['persona_entrada'] ?? date(1);
+        $this->persona_salida = $args['persona_salida'] ?? date(1);
         $this->persona_razon = $args['persona_razon'] ?? '';
     }
 
